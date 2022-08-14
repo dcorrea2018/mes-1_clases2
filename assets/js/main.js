@@ -138,3 +138,20 @@ class Dogs {
 const boxer = new Dogs("Rocky", "brown", 8);
 
 console.log(boxer.introduce());
+
+console.log("--------------------");
+
+class Baby {
+  constructor(name, age, toys) {
+    this.name = name;
+    this.age = age;
+    this.toys = toys;
+  }
+  introduce() {
+    return `my baby boy name is ${this.name}, and his age is ${this.age},and he loves plaing with the ${this.toys}, toys`;
+  }
+}
+const santino = new Baby("Santino", 3, "fireTruck");
+const Sienna = new Baby("Sienna", 1, "babyDoll");
+console.log(santino.introduce());
+console.log(Sienna.introduce());
